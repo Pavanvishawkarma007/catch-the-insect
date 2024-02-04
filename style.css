@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #E8D8C4;
+    font-family: FF rain;
+}
+html,body
+{
+    height: 100%;
+    width: 100%;
+}
+body{
+    overflow: hidden;
+}
+.screen{
+    height: 100vb;
+    width: 100vw;
+    background-color: #390c0c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all ease-out 0.2s;
+}
+.screen h2{
+    font-size: 60px;
+    margin-bottom: 40px;
+    font-weight: 100;
+}
+.screen button{
+    padding: 18px 35px;
+    font-size: 20px;
+    background-color: transparent;
+    border: 2px solid #e8d8c4;
+    color: #E8D8C4;
+    transition: all ease 0.2s;
+    cursor: pointer;
+}
+.screen button:active{
+    scale: 0.95;
+}
+.screen button:hover{
+    background-color: #E8D8C4;
+    color: #390c0c;
+}
+.screen h2{
+    font-size: 45px;
+    text-align: center;
+}
+.elem-container{
+    margin-top: 40px;
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.elem{
+    border: 2px solid #E8D8C4;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    cursor: grab;
+    transition: all ease 0.2s;
+}
+.elem:hover{
+    background-color: #E8D8C4;
+}
+.elem:active{
+    scale: 0.80;
+    cursor: grabbing;
+}
+.elem:hover h4{
+    color: #390c0c;
+    transition: all ease 0.3s;
+}
+.elem h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.elem img{
+    height: 100px;
+}
+.time-score{
+    width: 100%;
+    padding: 25px 45px;
+    display: flex;
+    /* align-items: center; */
+    border-bottom: 2px solid #E8D8C4;
+    justify-content: space-between;
+    /* margin-bottom: 4 7%; */
+}
+.time-score h4{
+    font-size: 15px;
+}
+.time-score h5{
+    font-size: 17px;
+}
+.playground{
+    height: 95%;
+    width: 100%;
+    position: relative;
+}
+.playground img{
+    height: 100px;
+    position: absolute;
+}
